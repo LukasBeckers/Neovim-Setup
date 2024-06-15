@@ -1,6 +1,7 @@
 #!bin/bash
 
-sudo apt install nvim
+sudo apt install -y neovim
+sudo apt install -y npm
 mkdir -p ~/.config/nvim
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
