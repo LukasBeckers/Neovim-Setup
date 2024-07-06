@@ -25,6 +25,9 @@ cmp.setup({
     ['<Tab>'] = cmp.mapping.select_next_item(),
     ['<S-Tab>'] = cmp.mapping.select_prev_item(),
   },
+  window = {
+  documentation = cmp.config.window.bordered(),
+},
   sources = cmp.config.sources({
     { name = 'nvim_lsp' },
     { name = 'luasnip' },
